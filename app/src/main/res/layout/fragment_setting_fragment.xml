@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_setting">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    android:paddingBottom="150dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePicImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/mensclothes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+   <android.support.v7.widget.CardView
+       android:id="@+id/cardView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/profilePicImageView"
+       android:layout_marginTop="10dp"
+       app:cardCornerRadius="10dp"
+       android:elevation="10dp"
+       >
+       <TextView
+           android:id="@+id/editProfileTextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Edit Profile"
+           android:textColor="#35A2AC"
+           android:textStyle="bold"
+           android:paddingRight="20dp"
+           android:paddingStart="20dp"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           android:background="?android:attr/selectableItemBackground"
+           android:clickable="true"/>
+   </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/groupImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilePicImageView"
+        android:src="@drawable/group_black_24dp"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:id="@+id/addGroupTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Group"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/profilePicImageView"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="40dp"/>
+
+    <ImageView
+        android:id="@+id/broadcastImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/brodcast"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addGroupTextView"/>
+    <TextView
+        android:id="@+id/newBroadcastTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Broadcast"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/addGroupTextView"
+        android:paddingLeft="40dp"/>
+    <ImageView
+        android:id="@+id/WeMetWebImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/web"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newBroadcastTextView"/>
+
+    <TextView
+        android:id="@+id/weMetWebTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WeMet Web"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/newBroadcastTextView"
+        android:paddingLeft="40dp"/>
+    <ImageView
+        android:id="@+id/starMessageImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/stars_message_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weMetWebTextView"/>
+
+
+    <TextView
+        android:id="@+id/starredMessageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Starred Message"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/weMetWebTextView"
+        android:paddingLeft="40dp"/>
+
+ <View
+     android:id="@+id/view1"
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/starredMessageTextView"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:background="#bfbfbf"
+     android:layout_marginTop="30dp">
+
+ </View>
+
+    <ImageView
+        android:id="@+id/accountImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/account_circle_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"/>
+    <TextView
+        android:id="@+id/accountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:paddingLeft="40dp"/>
+    <TextView
+        android:id="@+id/pscTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/accountTextView"
+        android:text="Privacy, security, change number"
+        android:textSize="10sp"
+        android:paddingLeft="40dp"/>
+    <ImageView
+        android:id="@+id/chatImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/chat_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/accountTextView"/>
+    <TextView
+        android:id="@+id/chatsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/accountTextView"
+        android:paddingLeft="40dp"/>
+    <TextView
+        android:id="@+id/bhwTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/chatsTextView"
+        android:text="Backup, history, wallpaper"
+        android:textSize="10sp"
+        android:paddingLeft="40dp"/>
+
+    <ImageView
+        android:id="@+id/notificationImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/notifications_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chatsTextView"/>
+    <TextView
+        android:id="@+id/notificationsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/chatsTextView"
+        android:paddingLeft="40dp"/>
+    <TextView
+        android:id="@+id/mgcTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/notificationsTextView"
+        android:text="Message, group &amp; call tones"
+        android:textSize="10sp"
+        android:paddingLeft="40dp"/>
+
+    <ImageView
+        android:id="@+id/dataUsagesImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/idata_usage_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notificationsTextView"/>
+    <TextView
+        android:id="@+id/dataAndStorageUsageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data and storage usage"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/notificationsTextView"
+        android:paddingLeft="40dp"/>
+    <TextView
+        android:id="@+id/nuaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/dataAndStorageUsageTextView"
+        android:text="Network usage, auto-download"
+        android:textSize="10sp"
+        android:paddingLeft="40dp"/>
+    <ImageView
+        android:id="@+id/helpImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/help_outline_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dataAndStorageUsageTextView"/>
+    <TextView
+        android:id="@+id/helpTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/dataAndStorageUsageTextView"
+        android:paddingLeft="40dp"/>
+    <TextView
+        android:id="@+id/fcpTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/helpTextView"
+        android:text="FAQ, contact us, privacy policy"
+        android:textSize="10sp"
+        android:paddingLeft="40dp"/>
+
+    <ImageView
+        android:id="@+id/inviteImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/invite_add_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helpTextView"/>
+    <TextView
+        android:id="@+id/InviteAFriendTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invite a friend"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/groupImageView"
+        app:layout_constraintTop_toBottomOf="@id/helpTextView"
+        android:paddingLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/logOutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inviteImageView"/>
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

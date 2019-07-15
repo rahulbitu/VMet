@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Privacy">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:id="@+id/whoCanSeePersonalInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who can see my personal info"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/suggestionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="If you dont't share your last Seen. you won't be able to see other people's Last Seen"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whoCanSeePersonalInfoTextView"/>
+
+            <TextView
+                android:id="@+id/lastSeenTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last seen"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/suggestionTextView"             />
+            <TextView
+                android:id="@+id/lastSeenAboutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My contact"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lastSeenTextView"
+                />
+            <TextView
+                android:id="@+id/profilePhotoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile photo"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lastSeenAboutTextView"
+                />
+            <TextView
+                android:id="@+id/profilePhotoAboutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My contact"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profilePhotoTextView"
+                />
+            <TextView
+                android:id="@+id/AboutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profilePhotoAboutTextView"
+                />
+            <TextView
+                android:id="@+id/aboutAboutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nobody"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/AboutTextView"
+                />
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aboutAboutTextView"
+                />
+            <TextView
+                android:id="@+id/statusAboutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 contacts excluded"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/statusTextView"
+                />
+            <TextView
+                android:id="@+id/readReceiptsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read receipts"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/statusAboutTextView"
+                android:layout_marginTop="40dp"
+                />
+            <TextView
+                android:id="@+id/readReceiptsAboutTextView"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="If turned off, you won't send or receive Read receipts,Read receipts are always sent for group chats."
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/readReceiptsTextView"
+                />
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                android:checked="true"
+                app:layout_constraintTop_toBottomOf="@id/statusAboutTextView"
+                android:layout_marginTop="35dp"/>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bfbfbf"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+            android:layout_marginTop="20dp"></View>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/groupTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Groups"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/groupsAboutTextView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Everyone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/groupTextView"
+                />
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live location"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/groupsAboutTextView"
+                />
+            <TextView
+                android:id="@+id/locationAboutTextView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="None"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/locationTextView"
+                />
+            <TextView
+                android:id="@+id/blockedContactTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blocked contacts"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/locationAboutTextView"
+                />
+            <TextView
+                android:id="@+id/blockedContactAboutTextView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="None"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blockedContactTextView"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="20dp">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/conversationTonesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conversation tones"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/playSoundTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="play sounds for incoming and outgoind messages"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/conversationTonesTextView"
+            />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:checked="true"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bfbfbf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+        android:layout_marginTop="20dp"></View>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/notificationToneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification tones"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/messageTextView"
+            />
+        <TextView
+            android:id="@+id/defaultNotificationToneTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notificationToneTextView"
+            />
+        <TextView
+            android:id="@+id/vibrateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/defaultNotificationToneTextView"
+            />
+        <TextView
+            android:id="@+id/defaultVibrateTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vibrateTextView"
+            />
+        <TextView
+            android:id="@+id/popupNotificationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popup notification"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/defaultVibrateTextView"
+            />
+        <TextView
+            android:id="@+id/noPopupTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="No popup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popupNotificationTextView"
+            />
+        <TextView
+            android:id="@+id/lightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noPopupTextView"
+            />
+        <TextView
+            android:id="@+id/lightColorTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="White"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lightTextView"
+            />
+
+        <TextView
+            android:id="@+id/highPriorityNotificationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use high priority notifications"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lightColorTextView"
+            />
+        <TextView
+            android:id="@+id/previewOfNotificationsTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Show previews of notifications at the tap of screen"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/highPriorityNotificationTextView"
+            />
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:checked="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/lightColorTextView"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bfbfbf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+        android:layout_marginTop="20dp"></View>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/groupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groups"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/notificationToneTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification tones"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/groupTextView"
+            />
+        <TextView
+            android:id="@+id/defaultNotificationToneTextView2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notificationToneTextView2"
+            />
+        <TextView
+            android:id="@+id/vibrateTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/defaultNotificationToneTextView2"
+            />
+        <TextView
+            android:id="@+id/defaultVibrateTextView2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vibrateTextView2"
+            />
+        <TextView
+            android:id="@+id/popupNotificationTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popup notification"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/defaultVibrateTextView2"
+            />
+        <TextView
+            android:id="@+id/noPopupTextView2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="No popup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popupNotificationTextView2"
+            />
+        <TextView
+            android:id="@+id/lightTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noPopupTextView2"
+            />
+        <TextView
+            android:id="@+id/lightColorTextView2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="White"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lightTextView2"
+            />
+
+        <TextView
+            android:id="@+id/highPriorityNotificationTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use high priority notifications"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lightColorTextView2"
+            />
+        <TextView
+            android:id="@+id/previewOfNotificationsTextView2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Show previews of notifications at the tap of screen"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/highPriorityNotificationTextView2"
+            />
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:checked="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/lightColorTextView2"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bfbfbf"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout3"
+            android:layout_marginTop="20dp"></View>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/callTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/ringToneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ringtone"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/callTextView"
+                />
+            <TextView
+                android:id="@+id/defaultRingtoneTextView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Default"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ringToneTextView"
+                />
+            <TextView
+                android:id="@+id/vibrateTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibrate"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/defaultRingtoneTextView"
+                />
+            <TextView
+                android:id="@+id/defaultVibrateTextView3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Default"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vibrateTextView3"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

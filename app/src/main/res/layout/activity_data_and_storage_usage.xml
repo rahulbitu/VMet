@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataAndStorageUsage">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/usageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usage"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/networkUsageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network usage"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/usageTextView"
+                />
+            <TextView
+                android:id="@+id/dataAmountTextView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="5.9 GB received"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/networkUsageTextView"
+                />
+            <TextView
+                android:id="@+id/storageUsageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storage usage"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dataAmountTextView"
+                />
+            <TextView
+                android:id="@+id/storageAmountTextView3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="342 MB"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/storageUsageTextView"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bfbfbf"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+            android:layout_marginTop="20dp"></View>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:id="@+id/mediaAutoDownloadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medoa auto-download"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/suggestionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Voice messages are always auto-download for the best communication experience"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mediaAutoDownloadTextView"/>
+
+            <TextView
+                android:id="@+id/whenUsingMobileDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When using mobile data"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/suggestionTextView"             />
+            <TextView
+                android:id="@+id/noMediaTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No media"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whenUsingMobileDataTextView"
+                />
+            <TextView
+                android:id="@+id/whenConnectedOnWifiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When connected on wifi"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/noMediaTextView1"
+                />
+            <TextView
+                android:id="@+id/noMediaTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No media"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whenConnectedOnWifiTextView"
+                />
+            <TextView
+                android:id="@+id/whenRoamingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When Roaming"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/noMediaTextView2"
+                />
+            <TextView
+                android:id="@+id/noMediaTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No media"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whenRoamingTextView"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bfbfbf"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+            android:layout_marginTop="20dp"></View>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:id="@+id/callSettingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call setting"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/conversationTonesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conversation tones"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/callSettingTextView"
+                />
+            <TextView
+                android:id="@+id/playSoundTextView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="play sounds for incoming and outgoind messages"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/conversationTonesTextView"
+                />
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                android:checked="true"
+                app:layout_constraintTop_toBottomOf="@id/callSettingTextView"
+                android:layout_marginTop="20dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="200dp">
+
+
+        <ImageView
+            android:id="@+id/FAQImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/help_outline_black_24dp"/>
+        <TextView
+            android:id="@+id/FAQTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/FAQImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/contactUsImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/group_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/FAQTextView"/>
+        <TextView
+            android:id="@+id/contactUsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toRightOf="@id/FAQImageView"
+            app:layout_constraintTop_toBottomOf="@id/FAQTextView"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/termsAndPrivacyPolicyImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/file_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contactUsTextView"/>
+
+        <TextView
+            android:id="@+id/termsAndPrivacyPolicyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Privacy Policy"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toRightOf="@id/termsAndPrivacyPolicyImageView"
+            app:layout_constraintTop_toBottomOf="@id/contactUsTextView"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/appInfoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/account_info_outline_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/termsAndPrivacyPolicyTextView"/>
+
+
+        <TextView
+            android:id="@+id/appInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App info"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toRightOf="@id/appInfoImageView"
+            app:layout_constraintTop_toBottomOf="@id/termsAndPrivacyPolicyTextView"
+            android:layout_marginLeft="20dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

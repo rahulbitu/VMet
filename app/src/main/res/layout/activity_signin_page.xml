@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="#FFFFFF">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/loginpage_bg1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/constraintLayout2"
+            >
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="150dp"
+            android:layout_height="400dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+            android:background="@drawable/loginpage_bg2"
+            android:layout_marginBottom="20dp"
+            >
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/signinpage_bg3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/constraintTopLayout"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/googleCircleView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="50dp"
+            >
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="180dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameEditText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"/>
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailEditText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"/>
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:imeOptions="actionGo"/>
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditText"
+                android:layout_marginTop="40dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/loginpage_button_bg"/>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/flotting_bg"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/arrow_downward_white_24dp"
+                    android:padding="5dp"
+                    />
+            </android.support.constraint.ConstraintLayout>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/signinpage_bg4"
+            app:layout_constraintRight_toRightOf="@id/constraintTopLayout"
+            app:layout_constraintTop_toTopOf="@id/constraintTopLayout"
+            app:layout_constraintBottom_toTopOf="@id/fbCircleView"
+            android:layout_marginRight="20dp"
+            android:elevation="50dp"
+            >
+
+            <TextView
+                android:id="@+id/signInTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                android:text="Sign In"
+                android:padding="20dp"
+                android:textColor="#12C8CE"/>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/flotting_bg"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_arrow_upward_white_24dp"
+                    android:padding="5dp"
+                    />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fbCircleView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout4"
+            app:layout_constraintBottom_toTopOf="@id/constraintLayout3"
+            android:src="@drawable/facebook"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="70dp"
+            android:elevation="10dp"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="3dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/twitterCircleView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fbCircleView"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/twitter"
+            android:layout_marginLeft="185dp"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="3dp"
+            android:elevation="10dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/googleCircleView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="270dp"
+            android:src="@drawable/google"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/twitterCircleView"
+            android:layout_marginTop="35dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

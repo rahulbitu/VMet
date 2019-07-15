@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "185370345071",
+    "firebase_url": "https://vmet-ab630.firebaseio.com",
+    "project_id": "vmet-ab630",
+    "storage_bucket": "vmet-ab630.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185370345071:android:e062ed070d4bdc2f",
+        "android_client_info": {
+          "package_name": "com.vmet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185370345071-haln73l3904sg46f06frq54c61rd8aps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vmet",
+            "certificate_hash": "60bc4d2cc0d4cf0ffbd934e20f896de8a4e07a2a"
+          }
+        },
+        {
+          "client_id": "185370345071-l7c7r3q4doqd4fm77dfguh394pho0n9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4BZ7Tj5BkEceVxMSugsbpC036OIUpGWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185370345071-l7c7r3q4doqd4fm77dfguh394pho0n9e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chats">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/enterIsSendTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter is send"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/sendYourMessageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter key will send your message"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enterIsSendTextView"
+            />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:checked="true"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/mediaVisibilityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Media visibility"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sendYourMessageTextView"
+            android:layout_marginTop="40dp"
+            />
+        <TextView
+            android:id="@+id/showDownloadTextView"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Show newly downloaded media in your phone's gallery"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mediaVisibilityTextView"
+            />
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:checked="true"
+            app:layout_constraintTop_toBottomOf="@id/sendYourMessageTextView"
+            android:layout_marginTop="35dp"/>
+        <TextView
+            android:id="@+id/fontSizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font size"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showDownloadTextView"
+            android:layout_marginTop="40dp"
+            />
+        <TextView
+            android:id="@+id/MediumTextView"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fontSizeTextView"
+            />
+        <TextView
+            android:id="@+id/appLanguageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Language"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/MediumTextView"
+            android:layout_marginTop="40dp"
+            />
+        <TextView
+            android:id="@+id/phoneLanguage"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Phone's language (English)"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appLanguageTextView"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bfbfbf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+        android:layout_marginTop="20dp"></View>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+<ImageView
+    android:id="@+id/wallpaperImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/wallpaper_black_24dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/wallpaperTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallpaper"
+            app:layout_constraintLeft_toRightOf="@id/wallpaperImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/chatBackupImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backup_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wallpaperTextView"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/chatBackupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat backup"
+            app:layout_constraintLeft_toRightOf="@id/wallpaperImageView"
+            app:layout_constraintTop_toBottomOf="@id/wallpaperTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/chatHistoryImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/history_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chatBackupTextView"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/chatHistoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat History"
+            app:layout_constraintLeft_toRightOf="@id/wallpaperImageView"
+            app:layout_constraintTop_toBottomOf="@id/chatBackupTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

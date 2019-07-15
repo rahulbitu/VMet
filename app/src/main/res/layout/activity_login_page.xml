@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="#FFFFFF">
+
+
+  <android.support.constraint.ConstraintLayout
+      android:id="@+id/constraintTopLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fbCircleView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout3"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/facebook"
+        android:layout_marginLeft="80dp"
+        android:elevation="10dp"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="3dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/twitterCircleView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout3"
+        android:src="@drawable/twitter"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="10dp"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="3dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/googleCircleView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout3"
+        android:src="@drawable/google"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="3dp"/>
+
+  <android.support.constraint.ConstraintLayout
+      android:id="@+id/constraintLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:background="@drawable/loginpage_bg1"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/constraintLayout2"
+
+      ></android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="150dp"
+        android:layout_height="400dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/loginpage_bg2"
+        android:layout_marginBottom="20dp"
+        >
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/loginpage_bg3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="50dp"
+        >
+
+      <EditText
+          android:id="@+id/emailEditText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="150dp"
+          android:hint="Email"
+          android:inputType="textEmailAddress"
+          android:imeOptions="actionNext"/>
+      <EditText
+          android:id="@+id/passwordEditText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/emailEditText"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="10dp"
+          android:hint="Password"
+          android:inputType="textPassword"
+          android:imeOptions="actionNext"/>
+
+      <Button
+          android:id="@+id/loginButton"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+          android:layout_marginTop="40dp"
+          android:text="Login"
+          android:textAllCaps="false"
+          android:textColor="#FFFFFF"
+          android:background="@drawable/loginpage_button_bg"/>
+
+      <TextView
+          android:id="@+id/forgotYourPasswordTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/loginButton"
+          android:layout_marginTop="20dp"
+          android:text="Forgot your password?"/>
+      <TextView
+          android:id="@+id/resetTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toRightOf="@id/forgotYourPasswordTextView"
+          app:layout_constraintTop_toBottomOf="@id/loginButton"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="5dp"
+          android:text="Reset"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingRight="40dp"
+          android:textColor="#12C8CE"/>
+
+      <android.support.constraint.ConstraintLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:background="@drawable/flotting_bg"
+          android:layout_marginRight="5dp"
+          android:layout_marginBottom="5dp"
+          >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_upward_white_24dp"
+            android:padding="5dp"
+            />
+
+      </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/loginpage_bg4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="20dp"
+        android:elevation="50dp"
+        >
+
+      <TextView
+          android:id="@+id/signUpTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:text="Sign Up"
+          android:layout_marginBottom="10dp"
+          android:padding="20dp"
+          android:textColor="#12C8CE"/>
+
+      <android.support.constraint.ConstraintLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:background="@drawable/flotting_bg"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/arrow_downward_white_24dp"
+            android:padding="5dp"
+            />
+      </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+  </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
